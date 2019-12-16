@@ -49,7 +49,7 @@ const AddSesion = ({ isWhite, style, navigation }) => (
   <TouchableOpacity style={[styles.button, style]} onPress={() => navigation.navigate('Pro')}>
     <Icon
       size={25}
-      name="add"
+      name="add-circle-outline"
       family="MaterialIcons"
       color={theme.COLORS[isWhite ? 'WHITE' : 'ICON']}
     />
@@ -60,7 +60,7 @@ const AddEstacion = ({ isWhite, style, navigation }) => (
   <TouchableOpacity style={[styles.button, style]} onPress={() => navigation.navigate('Pro')}>
     <Icon
       size={25}
-      name="add"
+      name="add-circle-outline"
       family="MaterialIcons"
       color={theme.COLORS[isWhite ? 'WHITE' : 'ICON']}
     />
@@ -71,7 +71,7 @@ const AddEjercicio = ({ isWhite, style, navigation }) => (
   <TouchableOpacity style={[styles.button, style]} onPress={() => navigation.navigate('Pro')}>
     <Icon
       size={25}
-      name="add"
+      name="add-circle-outline"
       family="MaterialIcons"
       color={theme.COLORS[isWhite ? 'WHITE' : 'ICON']}
     />

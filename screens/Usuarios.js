@@ -4,44 +4,46 @@ import { Block, theme } from 'galio-framework';
 
 import { Card } from '../components';
 import articles from '../constants/articles';
+import UsuarioCard from '../components/UsuarioCard';
 const { width } = Dimensions.get('screen');
 
 class Usuarios extends React.Component {
-    renderArticles = () => {
-      return (
-        <ScrollView
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={styles.articles}>
-          <Block flex>
-            <Card item={articles[0]} horizontal  />
-            <Block flex row>
+  renderArticles = () => {
+    return (
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.articles}>
+        <Block flex>
+          {/* <Card item={articles[0]} horizontal /> */}
+          <UsuarioCard item={articles[0]} horizontal></UsuarioCard>
+          {/* <Block flex row>
               <Card item={articles[1]} style={{ marginRight: theme.SIZES.BASE }} />
               <Card item={articles[2]} />
             </Block>
             <Card item={articles[3]} horizontal />
-            <Card item={articles[4]} full />
-          </Block>
-        </ScrollView>
-      )
-    }
-  
-    render() {
-      return (
-        <Block flex center style={styles.home}>
-          {this.renderArticles()}
+            <Card item={articles[4]} full /> */}
         </Block>
-      );
-    }
+      </ScrollView>
+    )
   }
 
-  const styles = StyleSheet.create({
-    home: {
-      width: width,    
-    },
-    articles: {
-      width: width - theme.SIZES.BASE * 2,
-      paddingVertical: theme.SIZES.BASE,
-    },
-  });
-  
-  export default Usuarios;
+  render() {
+    return (
+      <Block flex center style={styles.home}>
+        {this.renderArticles()}
+      </Block>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  home: {
+    width: width,
+  },
+  articles: {
+    width: width - theme.SIZES.BASE * 2,
+    paddingVertical: theme.SIZES.BASE,
+  },
+});
+
+export default Usuarios;
