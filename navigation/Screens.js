@@ -9,14 +9,11 @@ import {
 import { Block } from "galio-framework";
 
 // screens
-import Home from "../screens/Home";
-import Onboarding from "../screens/Onboarding";
-import Pro from "../screens/Pro";
 import Profile from "../screens/Profile";
 import Register from "../screens/Register";
 import Elements from "../screens/Elements";
 import Articles from "../screens/Articles";
-
+import Login from "../screens/Login"
 import Sesiones from "../screens/Sesiones";
 import Estaciones from "../screens/Estaciones";
 import Ejercicios from "../screens/Ejercicios";
@@ -95,15 +92,12 @@ const ArticlesStack = createStackNavigator({
   transitionConfig
 });
 
-const ProfileStack = createStackNavigator(
+const PerfilStack = createStackNavigator(
   {
-    Profile: {
+    Perfil: {
       screen: Profile,
       navigationOptions: ({ navigation }) => ({
-        header: (
-          <Header white transparent title="Profile" iconColor={'#FFF'} navigation={navigation} />
-        ),
-        headerTransparent: true
+        header: <Header title="Perfil" navigation={navigation} />
       })
     }
   },
@@ -182,15 +176,16 @@ const UsuariosStack = createStackNavigator(
   }
 );
 
+
 // divideru se baga ca si cum ar fi un ecrna dar nu-i nimic duh
 const AppStack = createDrawerNavigator(
   {
-    Onboarding: {
-      screen: Onboarding,
-      navigationOptions: {
-        drawerLabel: () => { }
-      }
-    },
+    // Onboarding: {
+    //   screen: Onboarding,
+    //   navigationOptions: {
+    //     drawerLabel: () => { }
+    //   }
+    // },
     Sesiones: {
       screen: SesionesStack,
       navigationOptions: navOpt => ({
@@ -223,11 +218,19 @@ const AppStack = createDrawerNavigator(
         )
       })
     },
-    Profile: {
-      screen: ProfileStack,
+    Perfil: {
+      screen: PerfilStack,
       navigationOptions: navOpt => ({
         drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} screen="Profile" title="Profile" />
+          <DrawerItem focused={focused} screen="Profile" title="Perfil" />
+        )
+      })
+    },
+    Logout: {
+      screen: Login,
+      navigationOptions: navOpt => ({
+        drawerLabel: ({ focused }) => (
+          <DrawerItem focused={focused} title="Logout" />
         )
       })
     },

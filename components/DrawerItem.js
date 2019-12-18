@@ -28,6 +28,15 @@ class DrawerItem extends React.Component {
             color={focused ? "white" : argonTheme.COLORS.ERROR}
           />
         );
+      case "Logout":
+        return (
+          <Icon
+            name="toll"
+            family="MaterialIcons"
+            size={20}
+            color={focused ? "white" : argonTheme.COLORS.ERROR}
+          />
+        );
       case "Ejercicios":
         return (
           <Icon
@@ -41,6 +50,15 @@ class DrawerItem extends React.Component {
         return (
           <Icon
             name="directions-run"
+            family="MaterialIcons"
+            size={20}
+            color={focused ? "white" : argonTheme.COLORS.INFO}
+          />
+        );
+      case "Perfil":
+        return (
+          <Icon
+            name="person"
             family="MaterialIcons"
             size={20}
             color={focused ? "white" : argonTheme.COLORS.INFO}

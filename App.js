@@ -7,6 +7,10 @@ import { Block, GalioProvider } from 'galio-framework';
 import Screens from './navigation/Screens';
 import { Images, articles, argonTheme } from './constants';
 
+import AppContainer from './navigation/AppSwitchNavigator';
+import Login from './screens/Login';
+import Register from './screens/Register';
+
 // cache app images
 const assetImages = [
   Images.Onboarding,
@@ -35,9 +39,9 @@ export default class App extends React.Component {
   state = {
     isLoadingComplete: false,
   }
-  
+
   render() {
-    if(!this.state.isLoadingComplete) {
+    if (!this.state.isLoadingComplete) {
       return (
         <AppLoading
           startAsync={this._loadResourcesAsync}
@@ -49,7 +53,10 @@ export default class App extends React.Component {
       return (
         <GalioProvider theme={argonTheme}>
           <Block flex>
-            <Screens />
+            {/* <Login></Login> */}
+            <AppContainer/>
+            {/* <Register></Register> */}
+            {/* <Screens /> */}
           </Block>
         </GalioProvider>
       );

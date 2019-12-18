@@ -89,6 +89,17 @@ const AddUsuario = ({ isWhite, style, navigation }) => (
   </TouchableOpacity>
 );
 
+const EditProfile = ({ isWhite, style, navigation }) => (
+  <TouchableOpacity style={[styles.button, style]} onPress={() => navigation.navigate('Pro')}>
+    <Icon
+      size={25}
+      name="create"
+      family="MaterialIcons"
+      color={theme.COLORS[isWhite ? 'WHITE' : 'ICON']}
+    />
+  </TouchableOpacity>
+);
+
 class Header extends React.Component {
   handleLeftPress = () => {
     const { back, navigation } = this.props;
@@ -121,6 +132,10 @@ class Header extends React.Component {
       case 'Usuarios':
         return ([
           <AddUsuario key='add-sesion' navigation={navigation} isWhite={white}></AddUsuario>
+        ]);
+      case 'Perfil':
+        return ([
+          <EditProfile key='edit-profile' navigation={navigation} isWhite={white}></EditProfile>
         ]);
 
 

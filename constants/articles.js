@@ -1,5 +1,3 @@
-import imageej from '../assets/imgs/ejercicio.jpeg'
-
 export default [
   {
     title: 'Ejercicio 1',

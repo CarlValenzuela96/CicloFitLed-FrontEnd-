@@ -27,7 +27,7 @@ class SesionCard extends React.Component {
                 <TouchableWithoutFeedback onPress={() => navigation.navigate('Pro')}>
                     <Block flex space="between" style={styles.cardDescription}>
                         <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
-                            <Text size={20} style={{ fontWeight: 'bold', marginVertical: 10 }}>Nombre estación</Text>
+                            <Text size={20} style={{ fontWeight: 'bold', marginVertical: 10 }}>Nombre Sesión</Text>
                         </View>
                         <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                             <View style={styles.iconstyle} >
