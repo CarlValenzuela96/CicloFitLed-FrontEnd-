@@ -1,13 +1,13 @@
 export default [
   {
     title: 'Ejercicio 1',
-    image: 'https://res.cloudinary.com/ufro/image/upload/v1576523168/rutinas-ejercicios_1_780x462_use87g.jpg',
+    image: 'https://res.cloudinary.com/ufro/image/upload/v1576871178/ejercicio1_fwh0ry.jpg',
     cta: 'View article', 
     horizontal: true
   },
   {
-    title: 'Is makeup one of your daily esse …',
-    image: 'https://images.unsplash.com/photo-1519368358672-25b03afee3bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2004&q=80',
+    title: 'Ejercicio 2',
+    image: 'https://res.cloudinary.com/ufro/image/upload/v1576871178/ejrecicio2_nqz6db.jpg',
     cta: 'View article'
   },
   {

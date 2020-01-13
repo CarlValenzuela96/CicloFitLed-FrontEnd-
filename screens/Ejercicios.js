@@ -14,13 +14,7 @@ class Ejercicios extends React.Component {
           contentContainerStyle={styles.articles}>
           <Block flex>
             <EjercicioCard item={articles[0]} horizontal></EjercicioCard>
-            {/* <Card item={articles[0]} horizontal  />
-            <Block flex row>
-              <Card item={articles[1]} style={{ marginRight: theme.SIZES.BASE }} />
-              <Card item={articles[2]} />
-            </Block>
-            <Card item={articles[3]} horizontal />
-            <Card item={articles[4]} full /> */}
+            <EjercicioCard item={articles[1]} horizontal></EjercicioCard>
           </Block>
         </ScrollView>
       )

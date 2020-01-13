@@ -180,12 +180,6 @@ const UsuariosStack = createStackNavigator(
 // divideru se baga ca si cum ar fi un ecrna dar nu-i nimic duh
 const AppStack = createDrawerNavigator(
   {
-    // Onboarding: {
-    //   screen: Onboarding,
-    //   navigationOptions: {
-    //     drawerLabel: () => { }
-    //   }
-    // },
     Sesiones: {
       screen: SesionesStack,
       navigationOptions: navOpt => ({
@@ -226,22 +220,22 @@ const AppStack = createDrawerNavigator(
         )
       })
     },
-    Logout: {
-      screen: Login,
-      navigationOptions: navOpt => ({
-        drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} title="Logout" />
-        )
-      })
-    },
-    Account: {
-      screen: Register,
-      navigationOptions: navOpt => ({
-        drawerLabel: ({ focused }) => (
-          <DrawerItem focused={focused} screen="Register" title="Register" />
-        )
-      })
-    },
+    // Logout: {
+    //   screen: Login,
+    //   navigationOptions: navOpt => ({
+    //     drawerLabel: ({ focused }) => (
+    //       <DrawerItem focused={focused} title="Logout" />
+    //     )
+    //   })
+    // },
+    // Account: {
+    //   screen: Register,
+    //   navigationOptions: navOpt => ({
+    //     drawerLabel: ({ focused }) => (
+    //       <DrawerItem focused={focused} screen="Register" title="Register" />
+    //     )
+    //   })
+    // },
     Elements: {
       screen: ElementsStack,
       navigationOptions: navOpt => ({

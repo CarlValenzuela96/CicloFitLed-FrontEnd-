@@ -4,7 +4,6 @@ import { AppLoading } from 'expo';
 import { Asset } from 'expo-asset';
 import { Block, GalioProvider } from 'galio-framework';
 
-import Screens from './navigation/Screens';
 import { Images, articles, argonTheme } from './constants';
 
 import AppContainer from './navigation/AppSwitchNavigator';

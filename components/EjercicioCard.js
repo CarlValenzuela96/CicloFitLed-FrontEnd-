@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         marginVertical: theme.SIZES.BASE,
         borderWidth: 0,
         minHeight: 114,
-        marginBottom: 16
+        marginBottom: 2
     },
     cardTitle: {
         flex: 1,

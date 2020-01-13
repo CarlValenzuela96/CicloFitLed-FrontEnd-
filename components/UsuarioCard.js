@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
         backgroundColor: theme.COLORS.WHITE,
         marginVertical: 5,
         borderWidth: 0,
-        minHeight: 140,
+        minHeight: 125,
         // marginBottom: 16,
     },
     cardTitle: {

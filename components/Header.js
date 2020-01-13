@@ -67,6 +67,28 @@ const AddEstacion = ({ isWhite, style, navigation }) => (
   </TouchableOpacity>
 );
 
+const EditEstacion = ({ isWhite, style, navigation }) => (
+  <TouchableOpacity style={[styles.button, style]} onPress={() => navigation.navigate('Pro')}>
+    <Icon
+      size={25}
+      name="add-circle-outline"
+      family="MaterialIcons"
+      color={theme.COLORS[isWhite ? 'WHITE' : 'ICON']}
+    />
+  </TouchableOpacity>
+);
+
+const DeleteEstacion = ({ isWhite, style, navigation }) => (
+  <TouchableOpacity style={[styles.button, style]} onPress={() => navigation.navigate('Pro')}>
+    <Icon
+      size={25}
+      name="add-circle-outline"
+      family="MaterialIcons"
+      color={theme.COLORS[isWhite ? 'WHITE' : 'ICON']}
+    />
+  </TouchableOpacity>
+);
+
 const AddEjercicio = ({ isWhite, style, navigation }) => (
   <TouchableOpacity style={[styles.button, style]} onPress={() => navigation.navigate('Pro')}>
     <Icon
@@ -124,6 +146,12 @@ class Header extends React.Component {
       case 'Estaciones':
         return ([
           <AddEstacion key='add-sesion' navigation={navigation} isWhite={white}></AddEstacion>
+        ]);
+      case 'Estacion':
+        return ([
+          // <AddEstacion key='add-sesion' navigation={navigation} isWhite={white}></AddEstacion>
+          <EditEstacion key='edit-estacion' navigation={navigation} isWhite={white}></EditEstacion>,
+          <DeleteEstacion key='delete-estacion' navigation={navigation} isWhite={white}></DeleteEstacion>
         ]);
       case 'Ejercicios':
         return ([
@@ -268,7 +296,7 @@ class Header extends React.Component {
           left={
             <Icon
               name={back ? 'nav-left' : "menu-8"} family="ArgonExtra"
-              size={14} onPress={this.handleLeftPress}
+              size={18} onPress={this.handleLeftPress}
               color={iconColor || argonTheme.COLORS.ICON} />
           }
           leftStyle={{ paddingVertical: 12, flex: 0.2 }}
