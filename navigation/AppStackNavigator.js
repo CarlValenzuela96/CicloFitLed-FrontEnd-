@@ -1,8 +1,8 @@
 import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
-import Estacion from '../screens/Estacion';
-import Register from '../screens/Register';
+import Estacion from '../screens/EstacionTab/Estacion';
+import Register from '../screens/Login/Register';
 import AppDrawerNavigator from '../navigation/AppDrawerNavigator';
 import { fromLeft, fromRight } from 'react-navigation-transitions';
 

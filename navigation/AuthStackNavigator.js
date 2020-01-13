@@ -1,8 +1,8 @@
 import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
-import Login from '../screens/Login';
-import Register from '../screens/Register';
+import Login from '../screens/Login/Login';
+import Register from '../screens/Login/Register';
 import { fromLeft, fromRight } from 'react-navigation-transitions';
 
 const AuthStackNavigator = createStackNavigator({

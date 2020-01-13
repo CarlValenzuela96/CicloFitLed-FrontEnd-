@@ -7,8 +7,7 @@ import { Block, GalioProvider } from 'galio-framework';
 import { Images, articles, argonTheme } from './constants';
 
 import AppContainer from './navigation/AppSwitchNavigator';
-import Login from './screens/Login';
-import Register from './screens/Register';
+
 
 // cache app images
 const assetImages = [
@@ -52,10 +51,7 @@ export default class App extends React.Component {
       return (
         <GalioProvider theme={argonTheme}>
           <Block flex>
-            {/* <Login></Login> */}
-            <AppContainer/>
-            {/* <Register></Register> */}
-            {/* <Screens /> */}
+            <AppContainer />
           </Block>
         </GalioProvider>
       );

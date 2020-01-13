@@ -2,19 +2,21 @@ import React from 'react';
 import { StyleSheet, Dimensions, ScrollView } from 'react-native';
 import { Block, theme } from 'galio-framework';
 
-import EjercicioCard from '../components/EjercicioCard'
-import articles from '../constants/articles';
+import { Card } from '../../components';
+import articles from '../../constants/articles';
+import SesionCard from '../../components/SesionCard';
 const { width } = Dimensions.get('screen');
 
-class Ejercicios extends React.Component {
+class Sesiones extends React.Component {
     renderArticles = () => {
       return (
         <ScrollView
           showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.articles}>
           <Block flex>
-            <EjercicioCard item={articles[0]} horizontal></EjercicioCard>
-            <EjercicioCard item={articles[1]} horizontal></EjercicioCard>
+            {/* <Card item={articles[0]} horizontal  /> */}
+            <SesionCard item={articles[0]} horizontal></SesionCard>
+            <SesionCard item={articles[0]} horizontal></SesionCard>
           </Block>
         </ScrollView>
       )
@@ -39,4 +41,4 @@ class Ejercicios extends React.Component {
     },
   });
   
-  export default Ejercicios;
+  export default Sesiones;

@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, Dimensions, ScrollView, TouchableWithoutFeedback } from 'react-native';
 import { Block, theme } from 'galio-framework';
 
-import { Card, EstacionCard } from '../components';
-import articles from '../constants/articles';
+import { Card, EstacionCard } from '../../components';
+import articles from '../../constants/articles';
 const { width } = Dimensions.get('screen');
 
 class Estaciones extends React.Component {

@@ -10,14 +10,14 @@ import { Block } from "galio-framework";
 
 // screens
 import Profile from "../screens/Profile";
-import Register from "../screens/Register";
+import Register from "../screens/Login/Register";
 import Elements from "../screens/Elements";
 import Articles from "../screens/Articles";
-import Login from "../screens/Login"
-import Sesiones from "../screens/Sesiones";
-import Estaciones from "../screens/Estaciones";
-import Ejercicios from "../screens/Ejercicios";
-import Usuarios from "../screens/Usuarios"
+import Login from "../screens/Login/Login"
+import Sesiones from "../screens/SesionTab/Sesiones";
+import Estaciones from "../screens/EstacionTab/Estaciones";
+import Ejercicios from "../screens/EjercicioTab/Ejercicios";
+import Usuarios from "../screens/UsuarioTab/Usuarios"
 
 // drawer
 import Menu from "./Menu";
